@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Robert Alterman's ICE1</title>
+
+</head>
+
+<body>
+
+	<h1>Robert Alterman</h1>
+
+	<nav>
+	    <a href="luke.html">Luke's Page</a><br>
+	    <a href="lillian.html">Lillian's Page</a>
+  	</nav>
+  	<br>
+  	<br>
+
+	<img src="ICE1_images/sketch.jpeg" alt="Web Page Sketch" style="width:450px;height:450px;">
+	<img src="ICE1_images/blockm.jpg" alt="Block M" style="width:450px;height:450px;">
+	<img src="http://www.annarbor.com/assets_c/2010/08/080510_UM_NORTH_QUAD_1_LON.JPG-thumb-590x393-49724.jpeg" alt="North Quad" style="width:450px;height:450px;"> 
+
+	<p>*The pictures above show our Web page sketch, the block M, and North Quadrangle*</p><br>
+	<p><em>What I noticed from looking at my site on different browsers:</em><br>
+		I noticed that the DOB form was different on different browsers. For example, on Chrome and Firefox, this form sets you up with a "mm/dd/yyyy" format and you can open a calendar to easily pick a date. Chrome also includes an up and down arrow to easily go between dates. On Safari, however, the DOB form was simply an empty text box. In addition, the media controls differed between the browsers.<br>
+		<br>
+		<em>What was wrong with the form?</em><br>
+		When you clicked on the text associated with the radio button, this did not put that corresponding field into focus. This is bad in terms of accessibility, as the radio button itself is very small and can be hard to click for some people. I fixed it so that clicking on the associated text will put the field into focus.<br>
+		<br>
+		</p>
+
+	<h4>Fill out the following form:</h4>
+	<form>
+		Name:
+		<input type="text" name="name" id = "name"><br>
+		<br>
+		<label for="dob">DOB:</label>
+		<input type="date" name="DOB" id = "dob"><br>
+		<br>
+
+		<div id="snack">
+			Please enter your choice of snack:<br>
+			<input id="snack1" type="radio" name="snack" value="cookies"> 
+			<label for="snack1">Cookies</label><br>
+	  		<input id="snack2" type="radio" name="snack" value="chips"> 
+	  		<label for="snack2">Chips</label><br>
+	  		<input id="snack3" type="radio" name="snack" value="candy"> 
+	  		<label for="snack3">Candy</label><br>
+  		</div>
+  		<br>
+
+  		<div id="drink">
+	  		Please enter your choice of drink:<br>
+			<input id="drink1" type="radio" name="drink" value="juice">
+			<label for="drink1">Juice</label><br>
+	  		<input id="drink2" type="radio" name="drink" value="soda">
+	  		<label for="drink2">Soda</label><br>
+	  		<input id="drink3" type="radio" name="drink" value="water">
+	  		<label for="drink3">Water</label><br>
+	  	</div>
+	</form>
+	<br>
+	<br>
+
+	<h4>Watch this football highlight:</h4>
+	<video width="500" height="500" autoplay controls>
+	  <source src="ICE1_videos/mariota.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+	<br>
+	<br>
+	<br>
+
+	<h4>Listen to "Hail to the Victors" below:</h4>
+	<audio controls>
+	  <source src="ICE1_audio/victors.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+	<br>
+	<br>
+
+</body>
+
+</html>
