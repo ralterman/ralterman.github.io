@@ -1,110 +1,86 @@
-@media only screen and (min-width: 650px) {
+@media only screen and (max-width: 850px) {
 
-.top-nav ul li {
-	display: inline-block;
-}
+	.nav ul li a {
+		display: block;
+	}
 
-.top-nav ul{
-	text-align: center;
-}
+	.nav {
+		width: 100%;
+		text-align: center;
+	}
 
-.photo-grid {
-	display: grid;
-  	grid-template-columns: repeat(4, 1fr);
-  	grid-template-rows: repeat(6, 1fr);
-  	grid-gap: 10px;
-}
+	#pics ul li {
+		width: 45%;
+		margin: 1%;
+	}
 
-.image1 {
-	grid-row: 3;
-	grid-column: 1/5;
-}
+	.portrait{
+		width: 100px;
+	}
 
-.image2 {
-	grid-row: 1;
-	grid-column: 1/5;
-}
+	.logo {
+		text-align: right;
+	}
 
-.image3 {
-	grid-row: 2;
-	grid-column: 1/3;
-}
+	.contacts {
+		width: 50px;
+	}
 
-.image4 {
-	grid-row: 2;
-	grid-column: 3/5;
-}
+	.bio {
+    	line-height: 1.25em;
+    	margin-bottom: 1.75em; 
+    	font-size: 1.15em;
+    	display: block;
+  	}
 
-.image5 {
-	grid-row: 4;
-	grid-column: 1/5;
-}
-
-.image6 {
-	grid-row: 5;
-	grid-column: 1/5;
-}
-
-.image7 {
-	grid-row: 6;
-	grid-column: 1/5;
-}
-
+  	p {
+  		line-height: 1.25em;
+    	font-size: 1.15em;
+    	display: block;
+    	margin: 10px;
+    	font-weight: lighter;
+  	}
 }
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 600px) {
 
-img {
-	float: left;
-}
+	.nav {
+		display: block;
+	}
 
-.top-nav ul{
-	display: flex;
-	justify-content: flex-end;
-}
+	#pics ul li {
+		width: 90%;
+		margin: 0 auto;
+	}
 
-.photo-grid {
-	display: grid;
-  	grid-template-columns: repeat(4, 1fr);
-  	grid-template-rows: repeat(5, 1fr);
-  	grid-gap: 10px;
-}
+	.portrait {
+		width: 100px;
+	}
 
-.image1 {
-	grid-row: 1;
-	grid-column: 1/3;
-}
+	.logo {
+		text-align: right;
+	}
 
-.image2 {
-	grid-row: 1;
-	grid-column: 3/5;
-}
+	.contacts {
+		width: 40px;
+	}
 
-.image3 {
-	grid-row: 2;
-	grid-column: 1/2;
-}
+	.bio {
+    	line-height: 1.25em;
+    	margin-bottom: 1.75em; 
+    	font-size: 1.15em;
+    	display: block;
+    	float: bottom;
+    	margin: 0 auto;
+    	margin-top: 10px;
+  	}
 
-.image4 {
-	grid-row: 2;
-	grid-column: 2/3;
-}
-
-
-.image5 {
-	grid-row: 2;
-	grid-column: 3/5;
-}
-
-.image6 {
-	grid-row: 3;
-	grid-column: 1/3;
-}
-
-.image7 {
-	grid-row: 3;
-	grid-column: 3/5;
-}
-
+  	p {
+  		line-height: 1.25em;
+    	margin: 10px;
+    	font-size: 1.15em;
+    	display: block;
+    	font-weight: lighter;
+  	}
 }
