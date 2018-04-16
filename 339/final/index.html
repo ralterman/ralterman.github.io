@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>	
+<html lang="en">
+<head>
+	<title>Final Exam - Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+    $(document).ready(function(){
+      $('#subscribe1').click(function(){
+        $('.pic1').hide();
+        $('#pics ul li').css({"border": "none"});
+      });
+      $('#subscribe2').click(function(){
+        $('.pic1').show();
+        $('#pics ul li').css({"border": "5px solid blue"});
+      });
+
+    }); 
+    </script>
+
+</head>
+
+<body>
+	<h1>Robert Alterman</h1>
+
+	<div id="pics">
+		<ul>
+			<li><img class="pic1" src="images/examPic.JPG" alt="Colleen"></li>
+			<li><img class="pic2" src="images/UMSI-logo.jpg" alt="UMSI Logo" height=312px></li>
+		</ul>
+	</div>
+
+	<div id="check">
+		<label>
+			<input type="submit" name="add_tag" value="Hide Image" id="subscribe1" onchange="togglepic1()">
+		</label>
+		<label>
+			<input type="submit" name="add_tag" value="Show Image" id="subscribe2" onchange="togglepic1()">
+		</label>
+    </div>
+
+</body>
+</html>
